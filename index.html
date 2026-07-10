@@ -216,12 +216,12 @@
 
   dashboards.forEach((d, i) => {
     sidebarMenu.innerHTML += `
-      <a class="menu-item" href="${d.link}" target="_blank">
+      <a class="menu-item" href="${d.link}">
         <span class="dot" style="background:${d.dotColor}"></span>${d.title.split("—")[0].trim()}
       </a>`;
 
     dashList.innerHTML += `
-      <a class="dash-card" style="border-left-color:${d.color}" href="${d.link}" target="_blank">
+      <a class="dash-card" style="border-left-color:${d.color}" href="${d.link}">
         <div class="dash-icon">${d.icon}</div>
         <div class="dash-info">
           <div class="dash-number">DASHBOARD ${String(i+1).padStart(2,'0')}</div>
